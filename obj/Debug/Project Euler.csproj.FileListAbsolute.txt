@@ -1,6 +1,0 @@
-D:\Visual Studios\Project Euler\bin\Debug\Project Euler.exe.config
-D:\Visual Studios\Project Euler\bin\Debug\Project Euler.exe
-D:\Visual Studios\Project Euler\bin\Debug\Project Euler.pdb
-D:\Visual Studios\Project Euler\obj\Debug\Project Euler.csprojResolveAssemblyReference.cache
-D:\Visual Studios\Project Euler\obj\Debug\Project Euler.exe
-D:\Visual Studios\Project Euler\obj\Debug\Project Euler.pdb
