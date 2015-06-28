@@ -32,22 +32,6 @@ namespace Project_Euler
 				}
 			}
 
-
-			/*do {
-				a++;
-				while (b != (1000 - a) || Pythagorean_Check (a, b, c) != true) {
-					b++;
-					c = 1000 - (a + b);
-					if ( b == 1000)
-					{
-						a++;
-						b = 0;
-						break;
-					}
-				}
-				b = 0;
-
-			} while ( Pythagorean_Check(a,b,c) != true);*/
 				
 			Console.WriteLine ("a: {0}, b: {1}, c: {2}", a, b, c);
 			Console.WriteLine ("Product : {0}", a * b * c);
