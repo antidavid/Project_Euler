@@ -43,6 +43,7 @@
     <Compile Include="Ten\Multiples of 3 and 5.cs" />
     <Compile Include="Ten\Smallest Multiple.cs" />
     <Compile Include="Ten\Sum Square Difference.cs" />
+    <Compile Include="Ten\9 Special Pythagorean Triplet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

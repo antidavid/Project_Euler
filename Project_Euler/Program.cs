@@ -57,6 +57,7 @@ namespace Project_Euler
 					case 6: Sum_Square_Difference.Entry();          break;
 					case 7: Project_Euler.Ten._10001st_prime.Entry(); break;
 					case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); break;
+					case 9: Project_Euler.__Special_Pythagorean_Triplet.Entry(); break;
 					}
 					#endregion
 				}
