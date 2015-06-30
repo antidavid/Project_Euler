@@ -37,6 +37,7 @@ namespace Project_Euler
 				#region User Input
 				Console.WriteLine();
 				Console.Write("opt : ");
+
 				int opt = Convert.ToInt32(Console.ReadLine());
 				Console.WriteLine();
 				#endregion
@@ -58,6 +59,7 @@ namespace Project_Euler
 					case 7: Project_Euler.Ten._10001st_prime.Entry(); break;
 					case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); break;
 					case 9: Project_Euler.__Special_Pythagorean_Triplet.Entry(); break;
+					case 10: Project_Euler.Summation_of_Primes.Entry(); break;
 					}
 					#endregion
 				}

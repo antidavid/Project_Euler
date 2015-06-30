@@ -44,6 +44,7 @@
     <Compile Include="Ten\Smallest Multiple.cs" />
     <Compile Include="Ten\Sum Square Difference.cs" />
     <Compile Include="Ten\9 Special Pythagorean Triplet.cs" />
+    <Compile Include="Ten\10 Summation of Primes.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
