@@ -12,7 +12,7 @@
 ///	There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 ///		Find the product abc.
 /// </summary>
-namespace Project_Euler
+namespace Project_Euler.Ten
 {
 	public class __Special_Pythagorean_Triplet
 	{

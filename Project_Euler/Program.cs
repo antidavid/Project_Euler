@@ -50,16 +50,16 @@ namespace Project_Euler
 					#region Menu Switch
 					switch (opt)
 					{
-					case 1: Multiples_of_3_and_5.Entry();           break;
-					case 2: Even_Fibonacci.Entry();                 break;
-					case 3: Largest_Prime_Factor.Entry();           break;
-					case 4: Largest_Palindrome_Product.Entry();     break;
-					case 5: Smallest_Multiple.Entry();              break;
-					case 6: Sum_Square_Difference.Entry();          break;
-					case 7: Project_Euler.Ten._10001st_prime.Entry(); break;
-					case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); break;
-					case 9: Project_Euler.__Special_Pythagorean_Triplet.Entry(); break;
-					case 10: Project_Euler.Summation_of_Primes.Entry(); break;
+					case 1: Project_Euler.Ten.Multiples_of_3_and_5.Entry();         break;
+					case 2: Project_Euler.Ten.Even_Fibonacci.Entry();               break;
+					case 3: Project_Euler.Ten.Largest_Prime_Factor.Entry();         break;
+					case 4: Project_Euler.Ten.Largest_Palindrome_Product.Entry();   break;
+					case 5: Project_Euler.Ten.Smallest_Multiple.Entry();            break;
+					case 6: Project_Euler.Ten.Sum_Square_Difference.Entry();        break;
+					case 7: Project_Euler.Ten._10001st_prime.Entry(); 				break;
+					case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); 	break;
+					case 9: Project_Euler.__Special_Pythagorean_Triplet.Entry(); 	break;
+					case 10: Project_Euler.Summation_of_Primes.Entry(); 			break;
 					}
 					#endregion
 				}

@@ -35,16 +35,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ten\10001st prime.cs" />
-    <Compile Include="Ten\Even Fibonacci.cs" />
-    <Compile Include="Ten\Largest Palindrome Product.cs" />
-    <Compile Include="Ten\Largest Prime Factor.cs" />
-    <Compile Include="Ten\Largest Product in a Series.cs" />
-    <Compile Include="Ten\Multiples of 3 and 5.cs" />
-    <Compile Include="Ten\Smallest Multiple.cs" />
-    <Compile Include="Ten\Sum Square Difference.cs" />
     <Compile Include="Ten\9 Special Pythagorean Triplet.cs" />
     <Compile Include="Ten\10 Summation of Primes.cs" />
+    <Compile Include="Ten\1 Multiples of 3 and 5.cs" />
+    <Compile Include="Ten\2 Even Fibonacci.cs" />
+    <Compile Include="Ten\3 Largest Prime Factor.cs" />
+    <Compile Include="Ten\4 Largest Palindrome Product.cs" />
+    <Compile Include="Ten\5 Smallest Multiple.cs" />
+    <Compile Include="Ten\6 Sum Square Difference.cs" />
+    <Compile Include="Ten\7 10001st prime.cs" />
+    <Compile Include="Ten\8 Largest Product in a Series.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 ///
 /// Find the sum of all the primes below two million.
 /// </summary>
-namespace Project_Euler
+namespace Project_Euler.Ten
 {
 	public class Summation_of_Primes
 	{
