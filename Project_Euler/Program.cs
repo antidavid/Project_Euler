@@ -180,7 +180,7 @@ namespace Project_Euler
 				switch (opt)
 				{
 				case 1: Project_Euler.Twenty.Largest_Product_in_a_Grid.Entry();      	break;
-
+				case 2: Project_Euler.Twenty.Highly_Divisible_Triangular_Number.Entry(); break;
 				}
 				#endregion
 

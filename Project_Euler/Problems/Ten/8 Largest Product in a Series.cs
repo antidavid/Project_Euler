@@ -50,14 +50,17 @@ namespace Project_Euler.Ten
             long solution = 0;
             long temp = 1;
 
+			// iterate through series
 			for (int i = 0; i < (thousand.Length - 13); i++) 
 			{
 				string tempString = thousand.Substring (i, 13);
 				temp = 1;
+				// get the current product in a series
 				for (int j = 0; j < 13; j++) 
 				{
 					temp = temp * Int32.Parse(tempString.Substring (j, 1));
 				}
+				// update solution
 				if (temp > solution) 
 				{
 					solution = temp;
