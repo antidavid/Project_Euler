@@ -107,6 +107,10 @@ namespace Project_Euler
 			}
 		}
 
+		/// <summary>
+		/// Tens the menu.
+		/// menu for first ten problems
+		/// </summary>
 		static void tenMenu(){
 			TextColor ("sub");
 			ReadMenu ("../../Menus/Ten.txt");
@@ -148,6 +152,10 @@ namespace Project_Euler
 			}
 		}
 
+		/// <summary>
+		/// Twenties the menu.
+		/// menu for problems 11 through 20 
+		/// </summary>
 		static void twentyMenu(){
 			TextColor ("sub");
 			ReadMenu ("../../Menus/Twenty.txt");
