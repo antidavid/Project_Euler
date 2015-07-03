@@ -19,6 +19,9 @@ namespace Project_Euler.Ten
 		/// </summary>
 		public static void Entry()
 		{
+			Console.WriteLine ("Project Euler : Problem 7");
+			Console.WriteLine ("10,001st prime");
+
 			int[] primes = new int[10001];
 			int i = 1;
 			int counter = 2;

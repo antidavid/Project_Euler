@@ -15,6 +15,9 @@ namespace Project_Euler.Ten
 	{
 		public static void Entry ()
 		{
+			Console.WriteLine ("Project Euler : Problem 10");
+			Console.WriteLine ("Summation of Primes");
+
 			List<int> primes = new List<int> ();
 
 			int num = 3;

@@ -18,6 +18,8 @@ namespace Project_Euler.Ten
 	{
 		public static void Entry ()
 		{
+			Console.WriteLine ("Project Euler : Problem 9");
+			Console.WriteLine ("Special Pythagorean Triplet");
 			int a = 1;
 			int b = 0;
 			int c = 0;

@@ -15,6 +15,8 @@ namespace Project_Euler.Ten
         
         public static void Entry()
         {
+			Console.WriteLine ("Project Euler : Problem 5");
+			Console.WriteLine ("Smallest Multiple");
             // brute force method... because why not :D
             // its slow... inefficient but it gets the job done
             int solution = 1;

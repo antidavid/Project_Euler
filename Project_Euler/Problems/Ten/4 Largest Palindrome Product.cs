@@ -16,6 +16,8 @@ namespace Project_Euler.Ten
        
         public static void Entry()
         {
+			Console.WriteLine ("Project Euler : Problem 4");
+			Console.WriteLine ("Largest Palindrome Product");
             int i = 999, j = 999;
             int num = 0, lrgPal = 0;
 

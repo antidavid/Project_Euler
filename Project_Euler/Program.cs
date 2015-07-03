@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 
 // Programmer : David Fletcher
@@ -122,6 +123,8 @@ namespace Project_Euler
 			// check to see if the user hasn't chosen to exit from the program
 			if (opt != 0) 
 			{
+				Stopwatch sw = new Stopwatch ();
+				sw.Start ();
 				TextColor("function");
 				// opt sends the program to the designated location
 				#region Menu Switch
@@ -139,6 +142,9 @@ namespace Project_Euler
 				case 10: Project_Euler.Ten.Summation_of_Primes.Entry(); 			break;
 				}
 				#endregion
+
+				sw.Stop ();
+				Console.WriteLine ("Time Elapsed : {0} ms", sw.ElapsedMilliseconds);
 			}
 		}
 
@@ -158,7 +164,9 @@ namespace Project_Euler
 			// check to see if the user hasn't chosen to exit from the program
 			if (opt != 0) 
 			{
+				Stopwatch sw = new Stopwatch ();
 				TextColor("function");
+				sw.Start ();
 				// opt sends the program to the designated location
 				#region Menu Switch
 				switch (opt)
@@ -167,6 +175,9 @@ namespace Project_Euler
 
 				}
 				#endregion
+
+				sw.Stop ();
+				Console.WriteLine ("Time Elapsed : {0} ms", sw.ElapsedMilliseconds);
 			}
 		}
 	}

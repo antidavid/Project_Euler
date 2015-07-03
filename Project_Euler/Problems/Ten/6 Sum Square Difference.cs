@@ -20,7 +20,10 @@ namespace Project_Euler.Ten
         // square it
         // subtract 1 - 100 squared individually from it
         public static void Entry()
-        {
+       {
+			Console.WriteLine ("Project Euler : Problem 6");
+			Console.WriteLine ("Sum Square Difference");
+
             long solution = 0;
             // get (1 + 2 + 3 + ... + 100)
             for (int i = 1; i <= 100; i++)

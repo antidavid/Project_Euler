@@ -25,7 +25,9 @@ namespace Project_Euler.Ten
         /// </summary>
         public static void Entry()
         {
-            Console.WriteLine("Enter Largest Prime Factor");
+			Console.WriteLine ("Project Euler : Problem 3");
+			Console.WriteLine ("Largest Prime Factor");
+
             long LargeNum = 600851475143;
 
             // iterate through until the "halfway point" and check if number divides evenly into LargeNum
