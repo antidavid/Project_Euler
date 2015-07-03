@@ -21,7 +21,7 @@ namespace Project_Euler
 		static void Main(string[] args)
 		{
 			#region Header
-			Console.ForegroundColor = ConsoleColor.Green;   // turn text green for funsies
+			TextColor("header");
 			Console.WriteLine("Project Euler Solutions");
 			Console.WriteLine("By: David Fletcher\n");
 			#endregion
@@ -29,11 +29,12 @@ namespace Project_Euler
 			// enter infinite loop
 			while (true)
 			{
-				TextColor (false);
+				TextColor ("main");
 				// Display the Printed menu to the user
 				Console.WriteLine();
-				ReadMenu();
+				ReadMenu("../../Menus/Main.txt");
 
+				TextColor ("prompt");
 				#region User Input
 				Console.WriteLine();
 				Console.Write("opt : ");
@@ -45,21 +46,13 @@ namespace Project_Euler
 				// check to see if the user hasn't chosen to exit from the program
 				if (opt != 0) 
 				{
-					TextColor(true);
+					TextColor("main");
 					// opt sends the program to the designated location
 					#region Menu Switch
 					switch (opt)
 					{
-					case 1: Project_Euler.Ten.Multiples_of_3_and_5.Entry();         break;
-					case 2: Project_Euler.Ten.Even_Fibonacci.Entry();               break;
-					case 3: Project_Euler.Ten.Largest_Prime_Factor.Entry();         break;
-					case 4: Project_Euler.Ten.Largest_Palindrome_Product.Entry();   break;
-					case 5: Project_Euler.Ten.Smallest_Multiple.Entry();            break;
-					case 6: Project_Euler.Ten.Sum_Square_Difference.Entry();        break;
-					case 7: Project_Euler.Ten._10001st_prime.Entry(); 				break;
-					case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); 	break;
-					case 9: Project_Euler.__Special_Pythagorean_Triplet.Entry(); 	break;
-					case 10: Project_Euler.Summation_of_Primes.Entry(); 			break;
+					case 1: tenMenu();		break;
+					case 2: twentyMenu();	break;
 					}
 					#endregion
 				}
@@ -78,10 +71,11 @@ namespace Project_Euler
 		/// <summary>
 		/// Print the menu held in the file Menu List.txt 
 		/// stored in /bin/Debug
+		/// "../../Menus/Ten.txt"
 		/// </summary>
-		static void ReadMenu()
+		static void ReadMenu(string file)
 		{
-			string text = System.IO.File.ReadAllText(@"Menu List.txt");
+			string text = System.IO.File.ReadAllText(file);
 
 			Console.WriteLine("{0}", text);
 		}
@@ -91,15 +85,88 @@ namespace Project_Euler
 		/// This makes it easier for users to differentiate what is the function and what is not
 		/// </summary>
 		/// <param name="function">function is a boolean to tell whether it is entering a function or not</param>
-		static void TextColor(bool function)
+		static void TextColor(string menu)
 		{
-			if (function == false)
-			{
-				Console.ForegroundColor = ConsoleColor.DarkGreen;
-			}
-			else if (function == true)
-			{
+			switch (menu) {
+			case "header":
+				Console.ForegroundColor = ConsoleColor.DarkBlue;
+				break;
+			case "main": 
+				Console.ForegroundColor = ConsoleColor.Blue; 
+				break;
+			case "sub":
+				Console.ForegroundColor = ConsoleColor.Red;
+				break;
+			case "function":
 				Console.ForegroundColor = ConsoleColor.Green;
+				break;
+			case "prompt":
+				Console.ForegroundColor = ConsoleColor.DarkMagenta;
+				break;
+			}
+		}
+
+		static void tenMenu(){
+			TextColor ("sub");
+			ReadMenu ("../../Menus/Ten.txt");
+
+			TextColor ("prompt");
+			#region User Input
+			Console.WriteLine();
+			Console.Write("opt : ");
+
+			int opt = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine();
+			#endregion
+
+			// check to see if the user hasn't chosen to exit from the program
+			if (opt != 0) 
+			{
+				TextColor("function");
+				// opt sends the program to the designated location
+				#region Menu Switch
+				switch (opt)
+				{
+				case 1: Project_Euler.Ten.Multiples_of_3_and_5.Entry();         	break;
+				case 2: Project_Euler.Ten.Even_Fibonacci.Entry();               	break;
+				case 3: Project_Euler.Ten.Largest_Prime_Factor.Entry();         	break;
+				case 4: Project_Euler.Ten.Largest_Palindrome_Product.Entry();   	break;
+				case 5: Project_Euler.Ten.Smallest_Multiple.Entry();            	break;
+				case 6: Project_Euler.Ten.Sum_Square_Difference.Entry();        	break;
+				case 7: Project_Euler.Ten._10001st_prime.Entry(); 					break;
+				case 8: Project_Euler.Ten.Largest_Product_in_a_Series.Entry(); 		break;
+				case 9: Project_Euler.Ten.__Special_Pythagorean_Triplet.Entry();	break;
+				case 10: Project_Euler.Ten.Summation_of_Primes.Entry(); 			break;
+				}
+				#endregion
+			}
+		}
+
+		static void twentyMenu(){
+			TextColor ("sub");
+			ReadMenu ("../../Menus/Twenty.txt");
+
+			TextColor ("prompt");
+			#region User Input
+			Console.WriteLine();
+			Console.Write("opt : ");
+
+			int opt = Convert.ToInt32(Console.ReadLine());
+			Console.WriteLine();
+			#endregion
+
+			// check to see if the user hasn't chosen to exit from the program
+			if (opt != 0) 
+			{
+				TextColor("function");
+				// opt sends the program to the designated location
+				#region Menu Switch
+				switch (opt)
+				{
+				case 1: Project_Euler.Twenty.Largest_Product_in_a_Grid.Entry();      	break;
+
+				}
+				#endregion
 			}
 		}
 	}
