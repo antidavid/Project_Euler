@@ -24,6 +24,7 @@ namespace Project_Euler.Ten
 			int b = 0;
 			int c = 0;
 
+			// loop until solution is found
 			while (Pythagorean_Check (a, b, c) != true) {
 				b++;
 				c = 1000 - (a + b);
